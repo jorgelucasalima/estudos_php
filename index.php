@@ -100,22 +100,25 @@ $numeroB = 1;
 // }
 
 $n = 5;
-$n1 = 0;
-$n1++;
+$n1 = 5;
+
+
+$verificar = $n == $n1 ? 'verdadeiro' : 'falso';
+echo $verificar;
 
 // for ($i=0; $i < $n; $i++) { 
 //   echo "<h1>$i</h1>";
 //   echo "<h1>$n1</h1>";
 // }
 
-// while ($n <= 10) {
-//   echo "<h1>$n</h1>";
-//   $n++;
-// }
+while ($n <= 10) {
+  echo "<h1>$n</h1>";
+  $n++;
+} 
 
-foreach ($dados as $chave => $item) {
-  echo $chave . " => " . $item . "<br>";
-}
+// foreach ($dados as $chave => $item) {
+//   echo $chave . " => " . $item . "<br>";
+// }
 
 
 #echo $html;
