@@ -37,7 +37,7 @@
   ++ incremento
   -- decremento
   == igualdade
-  === identidade
+  === identidade/identico
   != diferente
   <> diferente
   !== identidade
@@ -45,6 +45,8 @@
   < menor
   >= maior ou igual
   <= menor ou igual
+
+
   && e
   || ou
   ! negação
@@ -58,25 +60,62 @@
   - utiliza-se o .
 */
 
+/*
+  ESTRUTURA CONDICIONAIS.
+  if 
+*/
+
+
+
 $nome = "jorge";
 $idade = 34.54;
 $b = true;
 
-$primeiroNumero = 10; 
-$segundoNumero = 10;
+$primeiroNumero = 10.34; 
+$segundoNumero = 14;
 $soma = $primeiroNumero + $segundoNumero;
 
 $dados = ["jorge", "ayra", "mano"];
+$dados2 = ["j" => "jorge", "a" => "ayra", "m" => "mano"]; # chave => valor / array associativo
 
 
 $html = "
 <html>
+  <h1>nome: $nome</h1>
   <h1>a soma é: $soma</h1>
-  <h1>dados: $dados[1]</h1>
+  <h1>dados: $dados2[m]</h1>
   <p>$nome  $idade</p>
   <h1>$idade</h1>
   <h1>$b === false ? 'verdadeiro' : 'falso'</h1>
 </html>
 ";
 
-echo $html;
+$numeroA = 10;
+$numeroB = 1;
+
+// if ($numeroA === $numeroB) {
+//   echo "e igual e mesmo tipo";
+// } else {
+//   echo "não é igual";
+// }
+
+$n = 5;
+$n1 = 0;
+$n1++;
+
+// for ($i=0; $i < $n; $i++) { 
+//   echo "<h1>$i</h1>";
+//   echo "<h1>$n1</h1>";
+// }
+
+// while ($n <= 10) {
+//   echo "<h1>$n</h1>";
+//   $n++;
+// }
+
+foreach ($dados as $chave => $item) {
+  echo $chave . " => " . $item . "<br>";
+}
+
+
+#echo $html;
